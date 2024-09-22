@@ -1,0 +1,9 @@
+scene 1
+- check pin not match old pin -> true -> scene 2 ; false -> scene 1 css...
+- cancel -> redirect home
+- enter -> submit
+
+scene 2
+- check match with last pin -> true -> scene 3, js after 5s return home ; false	-> scene 2 css...
+- cancel -> redirect home
+- enter -> submit

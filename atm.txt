@@ -1,0 +1,35 @@
+- SQL: xong
+- PL -> BLL -> DAL : GL, LL, EL
+
+Use case:
+- Validation: validation thẻ của khách hàng và mã pin mà họ nhập vào
+- Withdraw: Cho phép khách hàng rút tiền
+- Check balance: Cho phép khách hàng kiểm tra số dư của họ
+- View history: Cho phép khách hàng xem những giao dịch thành công
+- Cash transfer: Cho phép khách hàng chuyển tiền từ thẻ của họ sang 
+tài khoản khác trong hệ thống ngân hàng
+- Change pin: Cho phép khách hàng đổi mã pin
+- Logging: Viết log cho chương trình
+
+Chương trình theo kiến trúc N-tier
+
+
+1. Validation:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

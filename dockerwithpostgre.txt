@@ -1,0 +1,30 @@
+docker pull postgres
+docker run -d -p 5432:5432 -e POSTGRES_PASSWORD=123 -e POSTGRES_USER=postgres -e POSTGRES_DB=hld_bank -v H:\postgresContainerData:/var/lib/postgresql/data --name=postgres_con postgres
+
+
+docker inspect postgres_con --> host, paste to application.yml
+
+
+FROM openjdk:17-oracle
+COPY target/*.jar hldbank.jar
+EXPOSE 8089
+ENTRYPOINT["java","-jar","hldbank.jar"]
+
+docker build -t hldbank_img .
+
+docker run -d -p 8089:8089 --name=hldbank_con hldbank_img
+
+
+url phải là tham số truyền vào. build image, sửa dockerfile, 6 image\
+
+full local, sso không có nhiều file cấu hình
+
+
+KEYCLOAK_URI=http://103.226.250.83:8080
+KAFKA_BOOTSTRAP_SERVERS=103.226.250.83:9092
+LINK_HOST=http://103.226.251.206:8881
+old bus dockerfile port 8084
+
+
+
+
